@@ -2,8 +2,8 @@
 
 <h2>Your Pragmatic Cart</h2>
 <ul>
-	<% @cart.line_items.each do |line_item| %>
-		<li><%= line_item.product.title %></li>
+	<% @cart.line_items.each do |item| %>
+		<li><%= item.quantity %> &times; <%= item.product.title %></li>
 	<% end %>
 </ul>
 
